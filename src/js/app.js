@@ -1,7 +1,9 @@
 // TODO: write code here
 
-const mainEl = document.createElement('main');
-
+// const mainEl = document.createElement('main');
+const mainEl = document.getElementById('main')
+// const d = document.getElementById('main');
+// d.innerHTML = 'asdasdsad';
 mainEl.innerHTML = `
 <div class="card">
   <div class="hole-game">
@@ -35,6 +37,7 @@ mainEl.innerHTML = `
     return document.getElementById(`hole${index}`);
   }
   function deactivateHole(index) {
+    console.log(document.getElementById(`hole3`))
     getHole(index).classList.remove('hole_has-obj');
   }
   function activateHole(index) {
